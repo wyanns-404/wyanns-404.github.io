@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayAn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="fContainer">
+        
+        <nav class="wrapper">
+            <div class="brand">
+                <div class="firstname">way</div>
+                <div class="lastname">an</div>
+            </div>
+            <ul class="navigation">
+                <li><a href="index.html" class="active">home</a></li>
+                <li><a href="jadwal.html">jadwal</a></li>
+            </ul>
+        </nav>
+        
+        <div class="bContainer">
+            <div class="biodata">
+                <img src="asset/pp.jpg" class="img-profil">
+                <div class="data">
+                    <p>
+                        Perkenalkan, saya
+                    </p>
+                    <h2>
+                        Wayan Santie Arif
+                    </h2>
+                    <p>
+                        NPM 2257051031<br>
+                        Jurusan Ilmu Komputer<br>
+                        Universitas Lampung
+                    </p>
+                </div>
+                <button id="tombol" class="btn">Lihat Jadwal</button>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <img src="asset/instagram-logo.png" class="instagram-img">
+        <a href="https://www.instagram.com/wyanns/" target="_blank">@wyanns</a>
+    </footer>
+</body>
+
+<script>
+    document.getElementById("tombol").addEventListener("click", function() {
+        window.location.href = "jadwal.html";
+    });
+</script>
+
+</html>
