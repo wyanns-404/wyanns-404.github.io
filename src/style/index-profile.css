@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Netflix+Sans:wght@400;700&display=swap');
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background: #141414;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.list-profiles {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+}
+
+.profile-gate-label {
+    color: #fff;
+    font-size: 3.5vw;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+}
+
+.choose-profile {
+    list-style: none;
+    display: flex;
+    gap: 28px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.profile-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.avatar-wrapper {
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    overflow: hidden;
+    border: 3px solid transparent;
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.profile-link:hover .avatar-wrapper,
+.profile-link:focus .avatar-wrapper {
+    border-color: #fff;
+    transform: scale(1.06);
+}
+
+.profile-icon {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 4px;
+}
+
+/* Colorful smiley avatars for demo */
+.profile-icon.ale {
+    background: linear-gradient(135deg, #4a90d9, #5b6fd8);
+    display: flex; align-items: center; justify-content: center;
+}
+.profile-icon.bell {
+    background: linear-gradient(135deg, #f0b429, #e0a010);
+    display: flex; align-items: center; justify-content: center;
+}
+.profile-icon.calya {
+    background: linear-gradient(135deg, #e63535, #c82020);
+    display: flex; align-items: center; justify-content: center;
+}
+.profile-icon.diana {
+    background: linear-gradient(135deg, #2a6b7c, #1a4a58);
+    display: flex; align-items: center; justify-content: center;
+}
+.profile-icon.ell {
+    background: linear-gradient(135deg, #3ecf6e, #2baa55);
+    display: flex; align-items: center; justify-content: center;
+}
+
+.smiley {
+    width: 80px;
+    height: 80px;
+}
+
+.profile-name {
+    color: #b3b3b3;
+    font-size: 1.1rem;
+    letter-spacing: 0.05em;
+    transition: color 0.2s ease;
+    text-align: center;
+}
+
+.profile-link:hover .profile-name,
+.profile-link:focus .profile-name {
+    color: #fff;
+}
+
+.svg-icon-profile-lock {
+    color: #808080;
+    display: block;
+    margin: 0 auto;
+    transition: color 0.2s ease;
+}
+
+.profile:hover .svg-icon-profile-lock {
+    color: #b3b3b3;
+}
